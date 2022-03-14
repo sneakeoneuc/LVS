@@ -1,0 +1,23 @@
+
+
+parameters:
+- name: companyName #name of the parameter; required
+  type: string 
+  default: 'n-a'
+- name: nameTemplate
+  type: string
+  default: companyEmpty-template.yml
+- name: msg
+  type: string
+  default: na
+  
+
+steps:
+
+ - template: '${{parameters.nameTemplate}}'
+   parameters:
+        companyName: '${{parameters.companyName}}'
+        nameTemplate: ${{parameters.nameTemplate}}
+        msg: ${{parameters.msg}}
+          
+

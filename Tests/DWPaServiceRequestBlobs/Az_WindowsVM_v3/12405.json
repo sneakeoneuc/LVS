@@ -1,0 +1,407 @@
+{
+  "connectionInstanceId": "DEV",
+  "inputs": {
+    "ServiceContext": {
+      "submitter": {
+        "loginName": "karen.dominguez@lvs1.com",
+        "jobTitle": null,
+        "fullName": "Karen Dominguez",
+        "emailAddress": "karen.dominguez@lvs1.com",
+        "department": null,
+        "region": null,
+        "company": "LVS Internal",
+        "site": {
+          "name": "LVS-Calgary",
+          "zipPostalCode": "T2P 0C1",
+          "street": "250 - 2 Street SW",
+          "country": "Canada",
+          "stateProvince": "Alberta",
+          "city": "Calgary"
+        },
+        "ntDomain": null,
+        "organization": null,
+        "siteGroup": null
+      },
+      "orderYearlyCost": "0.00 USD",
+      "externalOrderId": null,
+      "serviceRequest": {
+        "requesterLocale": null,
+        "quantity": 1,
+        "submittedDate": "2021-07-19T19:09:32Z",
+        "srmRequestTimeFormat": null,
+        "srmRequestDateTimeFormat": null,
+        "turnaroundDate": null,
+        "guid": "AGGCVZT6IP35HAQW809XQV95MVV9EC",
+        "orderDisplayId": null,
+        "reopenReason": null,
+        "externalId": null,
+        "srmRequestDateFormat": null,
+        "id": "12405",
+        "displayId": "12405"
+      },
+      "service": {
+        "localizedName": "Test-Az_CreateWindowsVM_v3",
+        "entitledToRequestedBy": false,
+        "version": "1.0",
+        "yearlyCostAmount": 0.0,
+        "name": "Test-Az_CreateWindowsVM_v3",
+        "id": "11402",
+        "serviceProvisioningTimeUnit": null,
+        "subCatalogId": null,
+        "bundleItems": [],
+        "oneTimeCostAmount": 0.0,
+        "yearlyCost": "0 USD",
+        "externalId": null,
+        "connectionId": null,
+        "monthlyCost": "0 USD",
+        "localizedVersion": "1.0",
+        "monthlyCostAmount": 0.0,
+        "serviceProvisioningTime": null,
+        "entitledToRequestedFor": false,
+        "oneTimeCost": "0 USD",
+        "bundle": false
+      },
+      "orderOneTimeCostAmount": 0.0,
+      "orderOneTimeCost": "0.00 USD",
+      "orderMonthlyCostAmount": 0.0,
+      "orderMonthlyCost": "0.00 USD",
+      "myStuffItem": null,
+      "requestedFor": {
+        "loginName": "karen.dominguez@lvs1.com",
+        "jobTitle": null,
+        "fullName": "Karen Dominguez",
+        "emailAddress": "karen.dominguez@lvs1.com",
+        "department": null,
+        "region": null,
+        "company": "LVS Internal",
+        "site": {
+          "name": "LVS-Calgary",
+          "zipPostalCode": "T2P 0C1",
+          "street": "250 - 2 Street SW",
+          "country": "Canada",
+          "stateProvince": "Alberta",
+          "city": "Calgary"
+        },
+        "ntDomain": null,
+        "organization": null,
+        "siteGroup": null
+      },
+      "orderGuid": "AGGCVZT6IP35HAQW80MRQV95PPV9L0",
+      "requestedBy": {
+        "loginName": "karen.dominguez@lvs1.com",
+        "jobTitle": null,
+        "fullName": "Karen Dominguez",
+        "emailAddress": "karen.dominguez@lvs1.com",
+        "department": null,
+        "region": null,
+        "company": "LVS Internal",
+        "site": {
+          "name": "LVS-Calgary",
+          "zipPostalCode": "T2P 0C1",
+          "street": "250 - 2 Street SW",
+          "country": "Canada",
+          "stateProvince": "Alberta",
+          "city": "Calgary"
+        },
+        "ntDomain": null,
+        "organization": null,
+        "siteGroup": null
+      },
+      "questionsAndAnswers": [
+        {
+          "key": "d41b9496-0bbe-3ae4-821a-ab37d07cf0e3",
+          "value": "LVS Internal",
+          "confidential": false,
+          "label": "Requested For",
+          "displayValue": [
+            "LVS Internal"
+          ],
+          "assignedToProcessInput": false,
+          "valueType": "TEXT",
+          "tags": []
+        },
+        {
+          "value": "/subscriptions/7f3c4fcf-626c-49e0-9160-a756147abaa4",
+          "tags": [],
+          "displayValue": [
+            "SUB-LVS-MSA-MAR2021"
+          ],
+          "label": "Subscription to Use",
+          "key": "00eed627-a44e-bbcf-2f15-fe0656ed43f5",
+          "metaData": [
+            "System.Collections.Hashtable"
+          ],
+          "confidential": false,
+          "assignedToProcessInput": true,
+          "valueType": "LIST"
+        },
+        {
+          "value": "rg-KDTest01",
+          "tags": [],
+          "displayValue": [
+            "rg-KDTest01"
+          ],
+          "label": "Resource Group",
+          "key": "4ba73297-bd86-6c77-9c56-00db4ee16cb4",
+          "metaData": [
+            "System.Collections.Hashtable"
+          ],
+          "confidential": false,
+          "assignedToProcessInput": true,
+          "valueType": "LIST"
+        },
+        {
+          "key": "9b8de28d-986b-b70f-e870-9b548b6cef78",
+          "value": "Az_WindowsVM_v3",
+          "confidential": false,
+          "label": "EditionCode",
+          "displayValue": [
+            "Az_WindowsVM_v3"
+          ],
+          "assignedToProcessInput": true,
+          "valueType": "TEXT",
+          "tags": []
+        },
+        {
+          "key": "6bcfe34c-150c-58b3-efc2-f9344b0a85fc",
+          "value": "WindowsVMTest",
+          "confidential": false,
+          "label": "Username",
+          "displayValue": [
+            "WindowsVMTest"
+          ],
+          "assignedToProcessInput": true,
+          "valueType": "TEXT",
+          "tags": []
+        },
+        {
+          "key": "0aa56503-88a6-557b-2bef-64e089777bee",
+          "value": "WindowsVMTest01!",
+          "confidential": false,
+          "label": "Password",
+          "displayValue": [
+            "WindowsVMTest01!"
+          ],
+          "assignedToProcessInput": true,
+          "valueType": "TEXT",
+          "tags": []
+        },
+        {
+          "key": "0aa1d3c4-c1bd-10a3-59d7-45ef42e26faf",
+          "value": "WindowsVMTest01",
+          "confidential": false,
+          "label": "VIrtual Machine Name",
+          "displayValue": [
+            "WindowsVMTest01"
+          ],
+          "assignedToProcessInput": true,
+          "valueType": "TEXT",
+          "tags": []
+        },
+        {
+          "value": "MicrosoftWindowsServer:WindowsServer:2019-Datacenter:latest",
+          "tags": [],
+          "displayValue": [
+            "Windows Server 2019 Datacenter"
+          ],
+          "label": "Virtual Machine Image",
+          "key": "5debf6b1-9df2-538d-4b95-539d93387f09",
+          "metaData": [
+            "System.Collections.Hashtable"
+          ],
+          "confidential": false,
+          "assignedToProcessInput": true,
+          "valueType": "LIST"
+        },
+        {
+          "value": "Standard_D2s_v4",
+          "tags": [],
+          "displayValue": [
+            "Small"
+          ],
+          "label": "Virtual Machine Size",
+          "key": "439f1b47-2e07-98e4-ba6e-592cbe38e655",
+          "metaData": [
+            "System.Collections.Hashtable"
+          ],
+          "confidential": false,
+          "assignedToProcessInput": true,
+          "valueType": "LIST"
+        },
+        {
+          "value": "2",
+          "tags": [],
+          "displayValue": [
+            "2"
+          ],
+          "label": "Would you like to add Data Disks?",
+          "key": "9e8a15c9-54cf-8b92-477c-65e4dacc7ff1",
+          "metaData": [
+            "System.Collections.Hashtable"
+          ],
+          "confidential": false,
+          "assignedToProcessInput": true,
+          "valueType": "LIST"
+        },
+        {
+          "value": "Standard_LRS",
+          "tags": [],
+          "displayValue": [
+            "Standard_LRS"
+          ],
+          "label": "What type of disk would you like to deploy?",
+          "key": "d2169497-62fd-9c86-59e8-0c9bd0d0a33a",
+          "metaData": [
+            "System.Collections.Hashtable"
+          ],
+          "confidential": false,
+          "assignedToProcessInput": true,
+          "valueType": "LIST"
+        },
+        {
+          "key": "18e220f0-651e-ab9e-6357-561d91d44eaa",
+          "value": "50",
+          "confidential": false,
+          "label": "What size(GB) would you like the disk to be?",
+          "displayValue": [
+            "50"
+          ],
+          "assignedToProcessInput": true,
+          "valueType": "TEXT",
+          "tags": []
+        },
+        {
+          "value": "StandardSSD_LRS",
+          "tags": [],
+          "displayValue": [
+            "StandardSSD_LRS"
+          ],
+          "label": "What type of disk would you like to deploy?",
+          "key": "36232766-0e35-01f5-7da3-87338de52e0b",
+          "metaData": [
+            "System.Collections.Hashtable"
+          ],
+          "confidential": false,
+          "assignedToProcessInput": true,
+          "valueType": "LIST"
+        },
+        {
+          "key": "28e1cec1-7225-ec96-f8e8-88ad59218b51",
+          "value": "50",
+          "confidential": false,
+          "label": "What size(GB) would you like the disk to be?",
+          "displayValue": [
+            "50"
+          ],
+          "assignedToProcessInput": true,
+          "valueType": "TEXT",
+          "tags": []
+        },
+        {
+          "value": "/subscriptions/7f3c4fcf-626c-49e0-9160-a756147abaa4/resourceGroups/rg-KDTest01/providers/Microsoft.Network/virtualNetworks/vnet-KDTest01/subnets/default",
+          "tags": [],
+          "displayValue": [
+            "vnet-KDTest01,default,canadacentral"
+          ],
+          "label": "SubnetID",
+          "key": "9d6cd0ff-11cc-e2a6-8a6e-f93da48e7bca",
+          "metaData": [
+            "System.Collections.Hashtable"
+          ],
+          "confidential": false,
+          "assignedToProcessInput": true,
+          "valueType": "LIST"
+        },
+        {
+          "value": "true",
+          "tags": [],
+          "displayValue": [
+            "YES"
+          ],
+          "label": "Should Long View Systems provide support for this virtual machine?",
+          "key": "05db7354-ecae-3dba-9fb5-6e8267656840",
+          "metaData": [
+            "System.Collections.Hashtable"
+          ],
+          "confidential": false,
+          "assignedToProcessInput": true,
+          "valueType": "BOOLEAN"
+        }
+      ],
+      "quantity": 1,
+      "orderId": "11805",
+      "orderYearlyCostAmount": 0.0,
+      "orderDescription": null
+    },
+    "EditionCode": "Az_WindowsVM_v3",
+    "PipelineParameters": {
+      "inputs": [
+        {
+          "value": "WindowsVMTest01!",
+          "key": "admin_password"
+        },
+        {
+          "value": "WindowsVMTest",
+          "key": "admin_username"
+        },
+        {
+          "value": "MicrosoftWindowsServer:WindowsServer:2019-Datacenter:latest",
+          "key": "image_URN"
+        },
+        {
+          "value": "rg-KDTest01",
+          "key": "resource_group_name"
+        },
+        {
+          "value": "/subscriptions/7f3c4fcf-626c-49e0-9160-a756147abaa4/resourceGroups/rg-KDTest01/providers/Microsoft.Network/virtualNetworks/vnet-KDTest01/subnets/default",
+          "key": "subnet_id"
+        },
+        {
+          "value": "/subscriptions/7f3c4fcf-626c-49e0-9160-a756147abaa4",
+          "key": "subscription_id"
+        },
+        {
+          "value": "WindowsVMTest01",
+          "key": "vm_name"
+        },
+        {
+          "value": "Standard_D2s_v4",
+          "key": "vm_size"
+        },
+        {
+          "key": "availability_set_id"
+        },
+        {
+          "value": 10,
+          "key": "datadisk_type_1"
+        },
+        {
+          "value": 50,
+          "key": "datadisk_size_1"
+        },
+        {
+          "value": 20,
+          "key": "datadisk_type_2"
+        },
+        {
+          "value": 50,
+          "key": "datadisk_size_2"
+        },
+        {
+          "key": "datadisk_type_3"
+        },
+        {
+          "value": 100,
+          "key": "datadisk_size_3"
+        },
+        {
+          "key": "datadisk_type_4"
+        },
+        {
+          "value": 100,
+          "key": "datadisk_size_4"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "Az_LinuxVM_v3":{
+    "TF_Directory": "Az_LinuxVM_v3"
+  },
+  "Az_WindowsVM_v3": {
+    "TF_Directory": "Az_WindowsVM_v3"
+  }
+}

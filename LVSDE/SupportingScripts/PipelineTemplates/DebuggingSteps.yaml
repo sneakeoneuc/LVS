@@ -1,0 +1,27 @@
+# File: simple-param.yml
+parameters:
+- name: RunDebuggingSteps # name of the parameter; required
+  type: boolean # data type of the parameter; required
+  default: false
+
+steps:
+- script: echo ${{ parameters.RunDebuggingSteps }}
+- task: CmdLine@2
+  displayName: Display directory contents.
+  condition: ${{ parameters.DebugPipeline }}
+  enabled: false
+  inputs:
+    script: 'dir C:\Modules\az_5.5.0'
+- task: CmdLine@2
+  displayName: Display Environment Variables
+  condition: ${{ parameters.DebugPipeline }}
+  enabled: false
+  inputs:
+    script: 'set'
+- task: PowerShell@2   
+  displayName: Display installed modules.
+  condition: ${{ parameters.DebugPipeline }}
+  enabled: false
+  inputs:
+    targetType: 'inline'
+    script: 'Get-module -ListAvailable'    

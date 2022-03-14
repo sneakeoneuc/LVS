@@ -1,0 +1,36 @@
+parameters:
+- name: EditionCode
+  type: string
+  default: NOTSET
+- name: SRSASToken
+  type: string
+  default: NOTSET
+- name: SRBlobName
+  type: string
+  default: NOTSET
+- name: SRBlobContainer
+  type: string
+  default: NOTSET
+- name: DebugPipeline
+  type: boolean
+  default: true
+- name: OrderID
+  type: string
+  default: 000000
+- name: connectionInstanceId
+  type: string
+  default: DEV
+#PLAN
+# 1. Read the script.  Validate format.  Parse JSON.
+# 1.1 Setup authentication to customer AZ.
+# 2. Setup phases
+
+steps: 
+  - script: echo ${{ parameters.EditionCode }}
+    displayName: "EditionCode"
+  - script: echo ${{ parameters.SRSASToken }}
+    displayName: "SRSASToken"
+  - script: echo ${{ parameters.SRBlobName }}
+    displayName: "SRBlobName"
+  - script: echo ${{ parameters.SRBlobContainer }}
+    displayName: "SRBlobContainer"    

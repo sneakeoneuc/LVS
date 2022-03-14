@@ -1,0 +1,528 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "inputs": {
+      "type": "object",
+      "properties": {
+        "EditionCode": {
+          "type": "string"
+        },
+        "ServiceContext": {
+          "type": "object",
+          "properties": {
+            "service": {
+              "type": "object",
+              "properties": {
+                "bundleItems": {
+                  "type": "array",
+                  "items": {}
+                },
+                "version": {
+                  "type": "string"
+                },
+                "serviceProvisioningTimeUnit": {
+                  "type":  ["string","null"]
+                },
+                "externalId": {
+                  "type":  ["string","null"]
+                },
+                "yearlyCostAmount": {
+                  "type": "number"
+                },
+                "monthlyCostAmount": {
+                  "type": "number"
+                },
+                "bundle": {
+                  "type": "boolean"
+                },
+                "localizedName": {
+                  "type": "string"
+                },
+                "subCatalogId": {
+                  "type":  ["string","null"]
+                },
+                "monthlyCost": {
+                  "type":  ["string","null"]
+                },
+                "connectionId": {
+                  "type":  ["string","null"]
+                },
+                "entitledToRequestedFor": {
+                  "type": "boolean"
+                },
+                "yearlyCost": {
+                  "type":  ["string","null"]
+                },
+                "oneTimeCost": {
+                  "type":  ["string","null"]
+                },
+                "oneTimeCostAmount": {
+                  "type": "number"
+                },
+                "serviceProvisioningTime": {
+                  "type":  ["string","null"]
+                },
+                "id": {
+                  "type": "string"
+                },
+                "localizedVersion": {
+                  "type":  ["string","null"]
+                },
+                "entitledToRequestedBy": {
+                  "type": "boolean"
+                },
+                "name": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "version",
+                "id",
+                "localizedVersion",
+                "entitledToRequestedBy",
+                "name"
+              ]
+            },
+            "orderId": {
+              "type": "string"
+            },
+            "orderGuid": {
+              "type":  ["string","null"]
+            },
+            "quantity": {
+              "type": "integer"
+            },
+            "myStuffItem": {
+              "type":  ["string","null"]
+            },
+            "requestedFor": {
+              "type": "object",
+              "properties": {
+                "loginName": {
+                  "type": "string"
+                },
+                "organization": {
+                  "type": ["string","null"]
+                },
+                "company": {
+                  "type":  ["string","null"]
+                },
+                "fullName": {
+                  "type": ["string","null"]
+                },
+                "emailAddress": {
+                  "type": ["string","null"]
+                },
+                "jobTitle": {
+                  "type": ["string","null"]
+                },
+                "ntDomain": {
+                  "type": ["string","null"]
+                },
+                "siteGroup": {
+                  "type": ["string","null"]
+                },
+                "region": {
+                  "type": ["string","null"]
+                },
+                "site": {
+                  "type": "object",
+                  "properties": {
+                    "zipPostalCode": {
+                      "type":  ["string","null"]
+                    },
+                    "country": {
+                      "type":  ["string","null"]
+                    },
+                    "name": {
+                      "type":  ["string","null"]
+                    },
+                    "street": {
+                      "type":  ["string","null"]
+                    },
+                    "city": {
+                      "type":  ["string","null"]
+                    },
+                    "stateProvince": {
+                      "type":  ["string","null"]
+                    }
+                  }
+                },
+                "department": {
+                  "type": ["string","null"]
+                }
+              },
+              "required": [
+                "loginName",
+                "company"
+              ]
+            },
+            "serviceRequest": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "reopenReason": {
+                  "type":  ["string","null"]
+                },
+                "srmRequestTimeFormat": {
+                  "type":  ["string","null"]
+                },
+                "orderDisplayId": {
+                  "type":  ["string","null"]
+                },
+                "requesterLocale": {
+                  "type":  ["string","null"]
+                },
+                "guid": {
+                  "type": "string"
+                },
+                "srmRequestDateFormat": {
+                  "type":  ["string","null"]
+                },
+                "displayId": {
+                  "type": "string"
+                },
+                "submittedDate": {
+                  "type": "string"
+                },
+                "externalId": {
+                  "type":  ["string","null"]
+                },
+                "srmRequestDateTimeFormat": {
+                  "type":  ["string","null"]
+                },
+                "turnaroundDate": {
+                  "type":  ["string","null"]
+                },
+                "quantity": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "id",
+                "reopenReason",
+                "srmRequestTimeFormat",
+                "orderDisplayId",
+                "requesterLocale",
+                "guid",
+                "srmRequestDateFormat",
+                "displayId",
+                "submittedDate",
+                "externalId",
+                "srmRequestDateTimeFormat",
+                "turnaroundDate",
+                "quantity"
+              ]
+            },
+            "orderMonthlyCostAmount": {
+              "type": "number"
+            },
+            "externalOrderId": {
+              "type":  ["string","null"]
+            },
+            "requestedBy": {
+              "type": "object",
+              "properties": {
+                "loginName": {
+                  "type": "string"
+                },
+                "organization": {
+                  "type": ["string","null"]
+                },
+                "company": {
+                  "type": "string"
+                },
+                "fullName": {
+                  "type": ["string","null"]
+                },
+                "emailAddress": {
+                  "type": ["string","null"]
+                },
+                "jobTitle": {
+                  "type": ["string","null"]
+                },
+                "ntDomain": {
+                  "type":  ["string","null"]
+                },
+                "siteGroup": {
+                  "type":  ["string","null"]
+                },
+                "region": {
+                  "type":  ["string","null"]
+                },
+                "site": {
+                  "type": "object",
+                  "properties": {
+                    "zipPostalCode": {
+                      "type":  ["string","null"]
+                    },
+                    "country": {
+                      "type":  ["string","null"]
+                    },
+                    "name": {
+                      "type":  ["string","null"]
+                    },
+                    "street": {
+                      "type":  ["string","null"]
+                    },
+                    "city": {
+                      "type":  ["string","null"]
+                    },
+                    "stateProvince": {
+                      "type":  ["string","null"]
+                    }
+                  }
+                },
+                "department": {
+                  "type": ["string","null"]
+                }
+              },
+              "required": [
+                "loginName",
+                "company"
+              ]
+            },
+            "submitter": {
+              "type": "object",
+              "properties": {
+                "loginName": {
+                  "type": "string"
+                },
+                "organization": {
+                  "type": ["string","null"]
+                },
+                "company": {
+                  "type": "string"
+                },
+                "fullName": {
+                  "type": ["string","null"]
+                },
+                "emailAddress": {
+                  "type": ["string","null"]
+                },
+                "jobTitle": {
+                  "type": ["string","null"]
+                },
+                "ntDomain": {
+                  "type": ["string","null"]
+                },
+                "siteGroup": {
+                  "type":  ["string","null"]
+                },
+                "region": {
+                  "type": ["string","null"]
+                },
+                "site": {
+                  "type": "object",
+                  "properties": {
+                    "zipPostalCode": {
+                      "type":  ["string","null"]
+                    },
+                    "country": {
+                      "type":  ["string","null"]
+                    },
+                    "name": {
+                      "type":  ["string","null"]
+                    },
+                    "street": {
+                      "type":  ["string","null"]
+                    },
+                    "city": {
+                      "type":  ["string","null"]
+                    },
+                    "stateProvince": {
+                      "type":  ["string","null"]
+                    }
+                  }
+                },
+                "department": {
+                  "type": ["string","null"]
+                }
+              },
+              "required": [
+                "loginName",
+                "company",
+                "fullName"
+              ]
+            },
+            "orderOneTimeCost": {
+              "type":  ["string","null"]
+            },
+            "orderYearlyCostAmount": {
+              "type": "number"
+            },
+            "orderYearlyCost": {
+              "type":  ["string","null"]
+            },
+            "orderDescription": {
+              "type":  ["string","null"]
+            },
+            "orderMonthlyCost": {
+              "type":  ["string","null"]
+            },
+            "orderOneTimeCostAmount": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "service",
+            "orderId",
+            "orderGuid",
+            "quantity",
+            "requestedFor"
+          ]
+        },
+        "SvcContext": {
+          "type": "string"
+        },
+        "PipelineParameters": {
+          "type": "object",
+          "properties": {
+            "inputs": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "key": {
+                      "type": "string"
+                    },
+                    "value": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "key",
+                    "value"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "key": {
+                      "type": "string"
+                    },
+                    "value": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "key",
+                    "value"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "key": {
+                      "type": "string"
+                    },
+                    "value": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "key",
+                    "value"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "key": {
+                      "type": "string"
+                    },
+                    "value": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "key",
+                    "value"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "key": {
+                      "type": "string"
+                    },
+                    "value": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "key",
+                    "value"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "key": {
+                      "type": "string"
+                    },
+                    "value": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "key",
+                    "value"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "key": {
+                      "type": "string"
+                    },
+                    "value": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "key",
+                    "value"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "key": {
+                      "type": "string"
+                    },
+                    "value": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "key",
+                    "value"
+                  ]
+                }
+              ]
+            }
+          },
+          "required": [
+            "inputs"
+          ]
+        }
+      },
+      "required": [
+        "EditionCode",
+        "ServiceContext"
+      ]
+    },
+    "connectionInstanceId": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "inputs",
+    "connectionInstanceId"
+  ]
+}

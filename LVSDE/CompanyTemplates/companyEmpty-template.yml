@@ -1,0 +1,25 @@
+
+
+parameters:
+- name: companyName #name of the parameter; required
+  type: string 
+  default: 'n-a'
+- name: nameTemplate
+  type: string
+  default: long-view template
+- name: msg
+  type: string
+  default: na
+
+steps:
+  - task : PowerShell@2
+    displayName: the name of ${{parameters.companyName}}
+    inputs:
+      targetType: 'inline'
+      script : |
+        Write-Host "company-emptytemplate.yml"
+        Write-Host "This is a generic company ${{parameters.companyName}}"
+        Write-Host "the companys name ${{parameters.nameTemplate}}"
+        Write-Host "message ${{parameters.msg}}"
+
+ 

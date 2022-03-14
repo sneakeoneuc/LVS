@@ -1,0 +1,28 @@
+{
+  "tenant_id": "5806bd64-fde5-449f-9a07-655a9b15ae50",
+  "subscription_id": "57215661-2f9e-482f-9334-c092e02651ec",
+  "admin_username": "adminUsername",
+  "vnet_resource_group_name": "ToBeUpdated",
+  "vnet_name": "ToBeUpdated",
+  "vnet_Subnet_name": "ToBeUpdated",
+  "vm_name": "ToBeUpdated",
+  "resource_group_name": "ToBeUpdated",
+  "location": "westus2",
+  "vm_size": "Standard_D4_v4",
+  "availability_set_id": "",
+
+  "store_admin_password_in_KV": false,
+
+  "Encrpyt_all_VM_Disks": false,
+
+  "backup_vault_enabled": false,
+
+  "data_disk_details" : {},
+
+  "publisher": "MicrosoftWindowsServer" ,
+  "offer": "WindowsServer",
+  "sku": "2016-Datacenter-smalldisk",
+  "mpversion": "latest",
+
+  "vm_tags": {}
+}

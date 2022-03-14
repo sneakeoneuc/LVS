@@ -1,0 +1,447 @@
+{
+  "inputs": {
+    "PipelineParameters": {
+      "inputs": [
+        {
+          "key": "admin_password",
+          "value": "L@bR00t!"
+        },
+        {
+          "key": "admin_username",
+          "value": "adminusername"
+        },
+        {
+          "key": "image_URN",
+          "value": "MicrosoftWindowsServer:WindowsServer:2019-Datacenter-smalldisk:latest"
+        },
+        {
+          "key": "resource_group_name",
+          "value": "RG-DWPaCMP-DEV-01"
+        },
+        {
+          "key": "subnet_id",
+          "value": "/subscriptions/7f3c4fcf-626c-49e0-9160-a756147abaa4/resourceGroups/rg-CMPLVSDE-Packer-01/providers/Microsoft.Network/virtualNetworks/vmss-cmplvsde-ap-01VNET/subnets/vmss-cmplvsde-ap-01Subnet"
+        },
+        {
+          "key": "subscription_id",
+          "value": "/subscriptions/7f3c4fcf-626c-49e0-9160-a756147abaa4"
+        },
+        {
+          "key": "vm_name",
+          "value": "vmWindows-022"
+        },
+        {
+          "key": "vm_size",
+          "value": "Standard_D4s_v4"
+        },
+        {
+          "key": "availability_set_id"
+        },
+        {
+          "key": "datadisk_type_1",
+          "value": 0
+        },
+        {
+          "key": "datadisk_size_1",
+          "value": 100
+        },
+        {
+          "key": "datadisk_type_2",
+          "value": 10
+        },
+        {
+          "key": "datadisk_size_2",
+          "value": 100
+        },
+        {
+          "key": "datadisk_type_3",
+          "value": 20
+        },
+        {
+          "key": "datadisk_size_3",
+          "value": 100
+        },
+        {
+          "key": "datadisk_type_4"
+        },
+        {
+          "key": "datadisk_size_4",
+          "value": 100
+        }
+      ]
+    },
+    "ServiceContext": {
+      "orderOneTimeCostAmount": 0.0,
+      "orderMonthlyCost": "0.00 USD",
+      "orderGuid": "AGGIIF2MHQ12SAQT4XFLQS6H1CURBE",
+      "requestedBy": {
+        "loginName": "craig.holmes@lvs1.com",
+        "jobTitle": "Technical Architect",
+        "siteGroup": null,
+        "organization": "Client Services",
+        "department": "Client Services",
+        "site": {
+          "city": "Edmonton",
+          "name": "LVS-Edmonton",
+          "country": "Canada",
+          "street": "Suite 1901, 10088 102 Avenue N.W.",
+          "stateProvince": "Alberta",
+          "zipPostalCode": "T5J 2Z1"
+        },
+        "region": null,
+        "fullName": "Craig Holmes",
+        "company": "LVS Internal",
+        "emailAddress": "craig.holmes@lvs1.com",
+        "ntDomain": null
+      },
+      "quantity": 1,
+      "submitter": {
+        "loginName": "craig.holmes@lvs1.com",
+        "jobTitle": "Technical Architect",
+        "siteGroup": null,
+        "organization": "Client Services",
+        "department": "Client Services",
+        "site": {
+          "city": "Edmonton",
+          "name": "LVS-Edmonton",
+          "country": "Canada",
+          "street": "Suite 1901, 10088 102 Avenue N.W.",
+          "stateProvince": "Alberta",
+          "zipPostalCode": "T5J 2Z1"
+        },
+        "region": null,
+        "fullName": "Craig Holmes",
+        "company": "LVS Internal",
+        "emailAddress": "craig.holmes@lvs1.com",
+        "ntDomain": null
+      },
+      "orderId": "10925",
+      "orderOneTimeCost": "0.00 USD",
+      "serviceRequest": {
+        "srmRequestTimeFormat": null,
+        "turnaroundDate": null,
+        "guid": "AGGIIF2MHQ12SAQT4WV1QS6HATUPGY",
+        "orderDisplayId": null,
+        "externalId": null,
+        "quantity": 1,
+        "reopenReason": null,
+        "srmRequestDateFormat": null,
+        "submittedDate": "2021-05-20T15:40:23Z",
+        "srmRequestDateTimeFormat": null,
+        "requesterLocale": null,
+        "id": "11555",
+        "displayId": "11555"
+      },
+      "orderYearlyCostAmount": 0.0,
+      "requestedFor": {
+        "loginName": "craig.holmes@lvs1.com",
+        "jobTitle": "Technical Architect",
+        "siteGroup": null,
+        "organization": "Client Services",
+        "department": "Client Services",
+        "site": {
+          "city": "Edmonton",
+          "name": "LVS-Edmonton",
+          "country": "Canada",
+          "street": "Suite 1901, 10088 102 Avenue N.W.",
+          "stateProvince": "Alberta",
+          "zipPostalCode": "T5J 2Z1"
+        },
+        "region": null,
+        "fullName": "Craig Holmes",
+        "company": "LVS Internal",
+        "emailAddress": "craig.holmes@lvs1.com",
+        "ntDomain": null
+      },
+      "orderMonthlyCostAmount": 0.0,
+      "orderYearlyCost": "0.00 USD",
+      "myStuffItem": null,
+      "service": {
+        "bundle": false,
+        "serviceProvisioningTimeUnit": null,
+        "id": "10701",
+        "entitledToRequestedFor": true,
+        "externalId": null,
+        "name": "Linux Virtual Machine",
+        "entitledToRequestedBy": true,
+        "yearlyCost": "0 USD",
+        "monthlyCost": "0 USD",
+        "monthlyCostAmount": 0.0,
+        "version": "1.1",
+        "connectionId": null,
+        "localizedName": "Linux Virtual Machine",
+        "yearlyCostAmount": 0.0,
+        "localizedVersion": "1.1",
+        "bundleItems": [],
+        "serviceProvisioningTime": null,
+        "oneTimeCostAmount": 0.0,
+        "subCatalogId": null,
+        "oneTimeCost": "0 USD"
+      },
+      "externalOrderId": null,
+      "questionsAndAnswers": [
+        {
+          "confidential": false,
+          "tags": [],
+          "valueType": "TEXT",
+          "label": "Requested For",
+          "assignedToProcessInput": false,
+          "displayValue": [
+            "LVS Internal"
+          ],
+          "value": "LVS Internal",
+          "key": "d41b9496-0bbe-3ae4-821a-ab37d07cf0e3"
+        },
+        {
+          "label": "Subscription to Use",
+          "displayValue": [
+            "SUB-LVS-MSA-MAR2021"
+          ],
+          "metaData": [
+            "System.Collections.Hashtable"
+          ],
+          "assignedToProcessInput": true,
+          "key": "00eed627-a44e-bbcf-2f15-fe0656ed43f5",
+          "valueType": "LIST",
+          "value": "/subscriptions/7f3c4fcf-626c-49e0-9160-a756147abaa4",
+          "confidential": false,
+          "tags": []
+        },
+        {
+          "label": "Resource Group",
+          "displayValue": [
+            "RG-DWPaCMP-DEV-01"
+          ],
+          "metaData": [
+            "System.Collections.Hashtable"
+          ],
+          "assignedToProcessInput": true,
+          "key": "4ba73297-bd86-6c77-9c56-00db4ee16cb4",
+          "valueType": "LIST",
+          "value": "RG-DWPaCMP-DEV-01",
+          "confidential": false,
+          "tags": []
+        },
+        {
+          "confidential": false,
+          "tags": [],
+          "valueType": "TEXT",
+          "label": "EditionCode",
+          "assignedToProcessInput": true,
+          "displayValue": [
+            "Az_WindowsVM_v3"
+          ],
+          "value": "Az_WindowsVM_v3",
+          "key": "9b8de28d-986b-b70f-e870-9b548b6cef78"
+        },
+        {
+          "confidential": false,
+          "tags": [],
+          "valueType": "TEXT",
+          "label": "Username",
+          "assignedToProcessInput": true,
+          "displayValue": [
+            "adminusername"
+          ],
+          "value": "adminusername",
+          "key": "6bcfe34c-150c-58b3-efc2-f9344b0a85fc"
+        },
+        {
+          "confidential": false,
+          "tags": [],
+          "valueType": "TEXT",
+          "label": "Password",
+          "assignedToProcessInput": true,
+          "displayValue": [
+            "L@bR00t!"
+          ],
+          "value": "L@bR00t!",
+          "key": "0aa56503-88a6-557b-2bef-64e089777bee"
+        },
+        {
+          "confidential": false,
+          "tags": [],
+          "valueType": "TEXT",
+          "label": "VIrtual Machine Name",
+          "assignedToProcessInput": true,
+          "displayValue": [
+            "vmWindows-022"
+          ],
+          "value": "vmWindows-022",
+          "key": "0aa1d3c4-c1bd-10a3-59d7-45ef42e26faf"
+        },
+        {
+          "label": "Virtual Machine Image",
+          "displayValue": [
+            "CentOS"
+          ],
+          "metaData": [
+            "System.Collections.Hashtable"
+          ],
+          "assignedToProcessInput": true,
+          "key": "5debf6b1-9df2-538d-4b95-539d93387f09",
+          "valueType": "LIST",
+          "value": "OpenLogic:CentOS:7.5:latest",
+          "confidential": false,
+          "tags": []
+        },
+        {
+          "label": "Virtual Machine Size",
+          "displayValue": [
+            "Medium"
+          ],
+          "metaData": [
+            "System.Collections.Hashtable"
+          ],
+          "assignedToProcessInput": true,
+          "key": "439f1b47-2e07-98e4-ba6e-592cbe38e655",
+          "valueType": "LIST",
+          "value": "Standard_D4s_v4",
+          "confidential": false,
+          "tags": []
+        },
+        {
+          "label": "SubnetID",
+          "displayValue": [
+            "vmss-cmplvsde-ap-01VNET,vmss-cmplvsde-ap-01Subnet,canadacentral"
+          ],
+          "metaData": [
+            "System.Collections.Hashtable"
+          ],
+          "assignedToProcessInput": true,
+          "key": "9d6cd0ff-11cc-e2a6-8a6e-f93da48e7bca",
+          "valueType": "LIST",
+          "value": "/subscriptions/7f3c4fcf-626c-49e0-9160-a756147abaa4/resourceGroups/rg-CMPLVSDE-Packer-01/providers/Microsoft.Network/virtualNetworks/vmss-cmplvsde-ap-01VNET/subnets/vmss-cmplvsde-ap-01Subnet",
+          "confidential": false,
+          "tags": []
+        },
+        {
+          "label": "Should Long View Systems provide support for this virtual machine?",
+          "displayValue": [
+            "YES"
+          ],
+          "metaData": [
+            "System.Collections.Hashtable"
+          ],
+          "assignedToProcessInput": true,
+          "key": "05db7354-ecae-3dba-9fb5-6e8267656840",
+          "valueType": "BOOLEAN",
+          "value": "true",
+          "confidential": false,
+          "tags": []
+        },
+        {
+          "confidential": false,
+          "tags": [],
+          "valueType": "TEXT",
+          "label": "Additonal Comments",
+          "assignedToProcessInput": false,
+          "displayValue": [
+            "Please call me..."
+          ],
+          "value": "Please call me...",
+          "key": "4be97eee-2626-3721-e07f-e082276ae04f"
+        },
+        {
+          "key": "9e8a15c9-54cf-8b92-477c-65e4dacc7ff1",
+          "label": "Would you like to add Data Disks?",
+          "metaData": [
+            "System.Collections.Hashtable"
+          ],
+          "tags": [],
+          "value": "3",
+          "valueType": "LIST",
+          "assignedToProcessInput": true,
+          "displayValue": [
+            "3"
+          ],
+          "confidential": false
+        },
+        {
+          "key": "07c4a5a7-7b26-5a19-2a9c-61ff94b89226",
+          "label": "What type of disk would you like to deploy?",
+          "metaData": [
+            "System.Collections.Hashtable"
+          ],
+          "tags": [],
+          "value": "Premium_LRS",
+          "valueType": "LIST",
+          "assignedToProcessInput": true,
+          "displayValue": [
+            "Premium_LRS"
+          ],
+          "confidential": false
+        },
+        {
+          "value": "100",
+          "tags": [],
+          "confidential": false,
+          "label": "What size(GB) would you like the disk to be?",
+          "assignedToProcessInput": true,
+          "valueType": "TEXT",
+          "key": "d9b63618-91d3-0102-e911-018e94133d5e",
+          "displayValue": [
+            "100"
+          ]
+        },
+        {
+          "key": "6f197455-a3ba-b29d-087d-929b7afba8ef",
+          "label": "What type of disk would you like to deploy?",
+          "metaData": [
+            "System.Collections.Hashtable"
+          ],
+          "tags": [],
+          "value": "Standard_LRS",
+          "valueType": "LIST",
+          "assignedToProcessInput": true,
+          "displayValue": [
+            "Standard_LRS"
+          ],
+          "confidential": false
+        },
+        {
+          "value": "100",
+          "tags": [],
+          "confidential": false,
+          "label": "What size(GB) would you like the disk to be?",
+          "assignedToProcessInput": true,
+          "valueType": "TEXT",
+          "key": "4beaa845-2535-1e1c-d3d9-bac6a58579c7",
+          "displayValue": [
+            "100"
+          ]
+        },
+        {
+          "key": "22d5046a-ed6d-4c74-e4e1-0f340c7c5664",
+          "label": "What type of disk would you like to deploy?",
+          "metaData": [
+            "System.Collections.Hashtable"
+          ],
+          "tags": [],
+          "value": "StandardSSD_LRS",
+          "valueType": "LIST",
+          "assignedToProcessInput": true,
+          "displayValue": [
+            "StandardSSD_LRS"
+          ],
+          "confidential": false
+        },
+        {
+          "value": "100",
+          "tags": [],
+          "confidential": false,
+          "label": "What size(GB) would you like the disk to be?",
+          "assignedToProcessInput": true,
+          "valueType": "TEXT",
+          "key": "b24ef51e-4e51-70dd-bd82-176052b1d60c",
+          "displayValue": [
+            "100"
+          ]
+        }
+      ],
+      "orderDescription": null
+    },
+    "EditionCode": "Az_WindowsVM_v3"
+  },
+  "connectionInstanceId": "DEV"
+}

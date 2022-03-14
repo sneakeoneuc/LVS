@@ -1,0 +1,338 @@
+{
+  "connectionInstanceId": "DEV",
+  "inputs": {
+    "ServiceContext": {
+      "orderYearlyCostAmount": 0.0,
+      "orderOneTimeCost": "0.00 USD",
+      "questionsAndAnswers": [
+        {
+          "confidential": false,
+          "valueType": "TEXT",
+          "displayValue": [
+            "LVS Internal"
+          ],
+          "assignedToProcessInput": false,
+          "tags": [],
+          "value": "LVS Internal",
+          "key": "d41b9496-0bbe-3ae4-821a-ab37d07cf0e3",
+          "label": "Requested For"
+        },
+        {
+          "value": "/subscriptions/7f3c4fcf-626c-49e0-9160-a756147abaa4",
+          "key": "00eed627-a44e-bbcf-2f15-fe0656ed43f5",
+          "displayValue": [
+            "SUB-LVS-MSA-MAR2021"
+          ],
+          "label": "Subscription to Use",
+          "tags": [],
+          "metaData": [
+            "System.Collections.Hashtable"
+          ],
+          "assignedToProcessInput": true,
+          "confidential": false,
+          "valueType": "LIST"
+        },
+        {
+          "value": "RG-DWPaCMP-DEV-01",
+          "key": "4ba73297-bd86-6c77-9c56-00db4ee16cb4",
+          "displayValue": [
+            "RG-DWPaCMP-DEV-01"
+          ],
+          "label": "Resource Group",
+          "tags": [],
+          "metaData": [
+            "System.Collections.Hashtable"
+          ],
+          "assignedToProcessInput": true,
+          "confidential": false,
+          "valueType": "LIST"
+        },
+        {
+          "confidential": false,
+          "valueType": "TEXT",
+          "displayValue": [
+            "Az_LinuxVM_v3"
+          ],
+          "assignedToProcessInput": true,
+          "tags": [],
+          "value": "Az_LinuxVM_v3",
+          "key": "9b8de28d-986b-b70f-e870-9b548b6cef78",
+          "label": "EditionCode"
+        },
+        {
+          "confidential": false,
+          "valueType": "TEXT",
+          "displayValue": [
+            "karendTest"
+          ],
+          "assignedToProcessInput": true,
+          "tags": [],
+          "value": "karendTest",
+          "key": "6bcfe34c-150c-58b3-efc2-f9344b0a85fc",
+          "label": "Username"
+        },
+        {
+          "confidential": false,
+          "valueType": "TEXT",
+          "displayValue": [
+            "Password!"
+          ],
+          "assignedToProcessInput": true,
+          "tags": [],
+          "value": "Password!",
+          "key": "0aa56503-88a6-557b-2bef-64e089777bee",
+          "label": "Password"
+        },
+        {
+          "confidential": false,
+          "valueType": "TEXT",
+          "displayValue": [
+            "karendTestVM"
+          ],
+          "assignedToProcessInput": true,
+          "tags": [],
+          "value": "karendTestVM",
+          "key": "0aa1d3c4-c1bd-10a3-59d7-45ef42e26faf",
+          "label": "VIrtual Machine Name"
+        },
+        {
+          "value": "OpenLogic:CentOS:7.5:latest",
+          "key": "5debf6b1-9df2-538d-4b95-539d93387f09",
+          "displayValue": [
+            "CentOS"
+          ],
+          "label": "Virtual Machine Image",
+          "tags": [],
+          "metaData": [
+            "System.Collections.Hashtable"
+          ],
+          "assignedToProcessInput": true,
+          "confidential": false,
+          "valueType": "LIST"
+        },
+        {
+          "value": "Standard_D2s_v4",
+          "key": "439f1b47-2e07-98e4-ba6e-592cbe38e655",
+          "displayValue": [
+            "Small"
+          ],
+          "label": "Virtual Machine Size",
+          "tags": [],
+          "metaData": [
+            "System.Collections.Hashtable"
+          ],
+          "assignedToProcessInput": true,
+          "confidential": false,
+          "valueType": "LIST"
+        },
+        {
+          "value": "/subscriptions/7f3c4fcf-626c-49e0-9160-a756147abaa4/resourceGroups/rg-CMPLVSDE-Packer-01/providers/Microsoft.Network/virtualNetworks/vmss-cmplvsde-ap-01VNET/subnets/vmss-cmplvsde-ap-01Subnet",
+          "key": "9d6cd0ff-11cc-e2a6-8a6e-f93da48e7bca",
+          "displayValue": [
+            "vmss-cmplvsde-ap-01VNET,vmss-cmplvsde-ap-01Subnet,canadacentral"
+          ],
+          "label": "SubnetID",
+          "tags": [],
+          "metaData": [
+            "System.Collections.Hashtable"
+          ],
+          "assignedToProcessInput": true,
+          "confidential": false,
+          "valueType": "LIST"
+        },
+        {
+          "value": "true",
+          "key": "05db7354-ecae-3dba-9fb5-6e8267656840",
+          "displayValue": [
+            "YES"
+          ],
+          "label": "Should Long View Systems provide support for this virtual machine?",
+          "tags": [],
+          "metaData": [
+            "System.Collections.Hashtable"
+          ],
+          "assignedToProcessInput": true,
+          "confidential": false,
+          "valueType": "BOOLEAN"
+        }
+      ],
+      "myStuffItem": null,
+      "submitter": {
+        "emailAddress": "karen.dominguez@lvs1.com",
+        "organization": null,
+        "loginName": "karen.dominguez@lvs1.com",
+        "jobTitle": null,
+        "fullName": "Karen Dominguez",
+        "company": "LVS Internal",
+        "siteGroup": null,
+        "site": {
+          "country": "Canada",
+          "street": "250 - 2 Street SW",
+          "name": "LVS-Calgary",
+          "stateProvince": "Alberta",
+          "city": "Calgary",
+          "zipPostalCode": "T2P 0C1"
+        },
+        "department": null,
+        "region": null,
+        "ntDomain": null
+      },
+      "serviceRequest": {
+        "srmRequestDateFormat": null,
+        "displayId": "12104",
+        "srmRequestDateTimeFormat": null,
+        "id": "12104",
+        "srmRequestTimeFormat": null,
+        "reopenReason": null,
+        "requesterLocale": null,
+        "turnaroundDate": null,
+        "orderDisplayId": null,
+        "externalId": null,
+        "submittedDate": "2021-06-21T15:29:54Z",
+        "quantity": 1,
+        "guid": "AGGFP17HEWDQCAQVCFPUQUD2KISXQY"
+      },
+      "externalOrderId": null,
+      "requestedBy": {
+        "emailAddress": "karen.dominguez@lvs1.com",
+        "organization": null,
+        "loginName": "karen.dominguez@lvs1.com",
+        "jobTitle": null,
+        "fullName": "Karen Dominguez",
+        "company": "LVS Internal",
+        "siteGroup": null,
+        "site": {
+          "country": "Canada",
+          "street": "250 - 2 Street SW",
+          "name": "LVS-Calgary",
+          "stateProvince": "Alberta",
+          "city": "Calgary",
+          "zipPostalCode": "T2P 0C1"
+        },
+        "department": null,
+        "region": null,
+        "ntDomain": null
+      },
+      "orderId": "11503",
+      "orderOneTimeCostAmount": 0.0,
+      "orderGuid": "AGGFP17HEWDQCAQVCFSJQUD2MNSYBN",
+      "orderMonthlyCostAmount": 0.0,
+      "orderMonthlyCost": "0.00 USD",
+      "orderYearlyCost": "0.00 USD",
+      "requestedFor": {
+        "emailAddress": "karen.dominguez@lvs1.com",
+        "organization": null,
+        "loginName": "karen.dominguez@lvs1.com",
+        "jobTitle": null,
+        "fullName": "Karen Dominguez",
+        "company": "LVS Internal",
+        "siteGroup": null,
+        "site": {
+          "country": "Canada",
+          "street": "250 - 2 Street SW",
+          "name": "LVS-Calgary",
+          "stateProvince": "Alberta",
+          "city": "Calgary",
+          "zipPostalCode": "T2P 0C1"
+        },
+        "department": null,
+        "region": null,
+        "ntDomain": null
+      },
+      "service": {
+        "oneTimeCost": "0 USD",
+        "localizedName": "Create Azure Linux Virtual Machine",
+        "yearlyCost": "0 USD",
+        "name": "Create Azure Linux Virtual Machine",
+        "subCatalogId": null,
+        "oneTimeCostAmount": 0.0,
+        "version": "1.2",
+        "externalId": null,
+        "monthlyCost": "0 USD",
+        "entitledToRequestedFor": true,
+        "bundle": false,
+        "yearlyCostAmount": 0.0,
+        "connectionId": null,
+        "serviceProvisioningTimeUnit": null,
+        "bundleItems": [],
+        "serviceProvisioningTime": null,
+        "entitledToRequestedBy": true,
+        "localizedVersion": "1.2",
+        "id": "10701",
+        "monthlyCostAmount": 0.0
+      },
+      "orderDescription": null,
+      "quantity": 1
+    },
+    "EditionCode": "Az_LinuxVM_v3",
+    "PipelineParameters": {
+      "inputs": [
+        {
+          "key": "admin_password",
+          "value": "Password!"
+        },
+        {
+          "key": "admin_username",
+          "value": "karendTest"
+        },
+        {
+          "key": "image_URN",
+          "value": "OpenLogic:CentOS:7.5:latest"
+        },
+        {
+          "key": "resource_group_name",
+          "value": "RG-DWPaCMP-DEV-01"
+        },
+        {
+          "key": "subnet_id",
+          "value": "/subscriptions/7f3c4fcf-626c-49e0-9160-a756147abaa4/resourceGroups/rg-CMPLVSDE-Packer-01/providers/Microsoft.Network/virtualNetworks/vmss-cmplvsde-ap-01VNET/subnets/vmss-cmplvsde-ap-01Subnet"
+        },
+        {
+          "key": "subscription_id",
+          "value": "/subscriptions/7f3c4fcf-626c-49e0-9160-a756147abaa4"
+        },
+        {
+          "key": "vm_name",
+          "value": "karendTestVM"
+        },
+        {
+          "key": "vm_size",
+          "value": "Standard_D2s_v4"
+        },
+        {
+          "key": "availability_set_id"
+        },
+        {
+          "value": 10,
+          "key": "datadisk_type_1"
+        },
+        {
+          "value": 100,
+          "key": "datadisk_size_1"
+        },
+        {
+          "value": 10,
+          "key": "datadisk_type_2"
+        },
+        {
+          "value": 50,
+          "key": "datadisk_size_2"
+        },
+        {
+          "key": "datadisk_type_3"
+        },
+        {
+          "value": 100,
+          "key": "datadisk_size_3"
+        },
+        {
+          "key": "datadisk_type_4"
+        },
+        {
+          "value": 100,
+          "key": "datadisk_size_4"
+        }
+      ]
+    }
+  }
+}

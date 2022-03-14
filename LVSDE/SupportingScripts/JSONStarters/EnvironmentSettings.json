@@ -1,0 +1,23 @@
+{
+    "PROD":{
+        "StorageAccountName": "saSrvReqDWPaCMPPROD01",
+        "ContainerName": "servicerequests",
+        "SSCMPCUSResourceID": "/subscriptions/75c76d58-15d8-41f5-9c68-958827093882/resourceGroups/RG-DWPaCMP-PROD-01/providers/Microsoft.KeyVault/vaults/kv-dwpacmp-cust-prod-01",
+        "AzDOServiceConnection": "SP-CloudManagementPlatform-Pipeline-ServiceConnection-Prod",
+        "KeyVaultName": "kv-dwpacmp-prod-02"
+    },
+    "QA":{
+        "StorageAccountName": "saSrvReqDWPaCMPQA01",
+        "ContainerName": "servicerequests",
+        "SSCMPCUSResourceID": "/subscriptions/75c76d58-15d8-41f5-9c68-958827093882/resourceGroups/RG-DWPaCMP-QA-01/providers/Microsoft.KeyVault/vaults/kv-dwpacmp-cust-qa-02",
+        "AzDOServiceConnection": "SP-CloudManagementPlatform-Pipeline-ServiceConnection-QA",
+        "KeyVaultName": "kv-dwpacmp-qa-02"
+    },
+    "DEV":{
+        "StorageAccountName": "sasrvreqdwpacmpdev01",
+        "ContainerName": "servicerequests",
+        "SSCMPCUSResourceID": "/subscriptions/7f3c4fcf-626c-49e0-9160-a756147abaa4/resourceGroups/RG-DWPaCMP-DEV-01/providers/Microsoft.KeyVault/vaults/kv-dwpacmp-cust-dev-01",
+        "AzDOServiceConnection": "SP-CloudManagementPlatform-Pipeline-ServiceConnection-Dev",
+        "KeyVaultName": "kv-dwpacmp-dev-01"
+    }
+}

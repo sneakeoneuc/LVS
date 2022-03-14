@@ -1,0 +1,247 @@
+#Do not trigger automatically.
+trigger: none
+
+parameters:
+- name: EditionCode
+  type: string
+  default: NOTSET
+- name: SRSASToken
+  type: string
+  default: NOTSET
+- name: SRBlobName
+  type: string
+  default: NOTSET
+- name: SRBlobContainer
+  type: string
+  default: NOTSET
+- name: DebugPipeline
+  type: boolean
+  default: true
+- name: OrderID
+  type: string
+  default: 000000
+- name: connectionInstanceId
+  type: string
+  default: DEV
+- name: RunTerraformApply
+  type: boolean
+  default: true
+ 
+
+#The maximum length of a build number is 255 characters. 
+#Characters which are not allowed include '"', '/', ':', '<', '>', '\', '|', '?', '@', and '*'.
+name: ${{ parameters.OrderID }}-${{ parameters.EditionCode }}-$(Date:yyyyMMdd)-$(Hours)h$(Minutes)m$(Rev:.r)
+
+variables:
+  - name: PathToScripts
+    value: '$(System.DefaultWorkingDirectory)/LVSDE/SupportingScripts'
+  - name: SupportedEditionCodes
+    value: 'Az_LinuxVM_v3,Az_WindowsVM_v3' #List of comma seperated edition codes this pipeline supports.  The EditionCode parameter must match one of these.
+  - name: System.debug
+    value: ${{ parameters.DebugPipeline }}
+  - name: PathToTerraform
+    value: '$(System.DefaultWorkingDirectory)/TF'
+  - name: PathToPipelineTemplates
+    value: '$(System.DefaultWorkingDirectory)/$(PathToScripts)/PipelineTemplates'    
+  - name: EditionCode
+    value: ${{ parameters.EditionCode }}
+  - name: ServiceConnectionName
+    ${{ if contains(parameters.connectionInstanceId, 'DEV') }}:
+      value: 'SP-CloudManagementPlatform-Pipeline-ServiceConnection-Dev'
+    ${{ if contains(parameters.connectionInstanceId, 'QA') }}:
+      value: 'SP-CloudManagementPlatform-Pipeline-ServiceConnection-QA'
+    ${{ if contains(parameters.connectionInstanceId, 'PROD') }}:
+      value: 'SP-CloudManagementPlatform-Pipeline-ServiceConnection-Prod'
+
+  - name: RunTerraformApply
+    value: ${{ parameters.RunTerraformApply }}
+  - name: ArtifactName
+    value: ${{ parameters.OrderID }}-${{ parameters.EditionCode }}.zip
+  
+  - name: PipeLineAPI
+    ${{ if contains(parameters.connectionInstanceId, 'DEV') }}:
+      value: 156
+    ${{ if contains(parameters.connectionInstanceId, 'QA') }}:
+      value: 156
+    ${{ if contains(parameters.connectionInstanceId, 'PROD') }}:
+      value: 157
+  
+  - name: PipeLineRef
+    ${{ if contains(parameters.connectionInstanceId, 'DEV') }}:
+      value: 'dev-test'
+    ${{ if contains(parameters.connectionInstanceId, 'QA') }}:
+      value: 'dev-test'
+    ${{ if contains(parameters.connectionInstanceId, 'PROD') }}:
+      value: 'main'
+
+
+#Do everything in one set of steps.
+jobs:
+  - job: terraformProcessJob
+    displayName: Terraform Process
+    pool:
+      vmImage: 'windows-2019'
+    steps:
+    #Validate the Pipeline Requirements - Do some verification that the Pipeline can run successfully.
+    - ${{ if contains(parameters.connectionInstanceId, 'DEV') }}:
+      - checkout: git://CloudManagementPlatform/CMP-LVSDE-TF-VM@dev-test
+
+    - ${{ if contains(parameters.connectionInstanceId, 'QA') }}:
+      - checkout: git://CloudManagementPlatform/CMP-LVSDE-TF-VM@qa-test
+
+    - ${{ if contains(parameters.connectionInstanceId, 'PROD') }}:
+      - checkout: git://CloudManagementPlatform/CMP-LVSDE-TF-VM@main
+
+    - task: PowerShell@2
+      displayName: Validate Pipeline Requirements
+      name: PSScript_ValidatePipelineRequirements
+      inputs:
+        targetType: 'filePath'
+        filePath: '$(System.DefaultWorkingDirectory)/LVSDE/SupportingScripts/ValidatePipelineReq.ps1' # Required when targetType == FilePath
+        arguments: -SupportedEditionCodes '$(SupportedEditionCodes)' -ActualEditionCodes '$(EditionCode)'
+        pwsh: true
+
+    #Do additional setup steps.
+    - task: AzurePowerShell@4
+      name: PSScript_SetupLVSDE
+      displayName: Setup Long View Deployment Engine
+      inputs:
+        azureSubscription: '$(ServiceConnectionName)'
+        scriptType: 'filePath'
+        scriptPath: '$(System.DefaultWorkingDirectory)/LVSDE/SupportingScripts/LVSDE-InitialSetup.ps1' # Required when targetType == FilePath
+        scriptArguments: -BlobName '${{ parameters.SRBlobName}}' -SASToken '${{ parameters.SRSASToken }}' -RepoRoot '$(System.DefaultWorkingDirectory)' -connectionInstanceId '${{ parameters.connectionInstanceId }}'
+        errorActionPreference: 'stop' # Optional. Options: stop, continue, silentlyContinue
+        failOnStandardError: true # Optional
+        azurePowerShellVersion: 'OtherVersion' # Required. Options: latestVersion, otherVersion
+        preferredAzurePowerShellVersion: '5.5.0' # Required when azurePowerShellVersion == OtherVersion    
+        pwsh: true
+                           
+    
+
+    - task: PowerShell@2
+      displayName: Validate name company
+      name: PSScript_CompanyName
+      inputs:
+          targetType: filePath
+          filePath: $(System.DefaultWorkingDirectory)/LVSDE/CompanyTemplates/SetTemplateCompany.ps1
+          arguments: -requestedForCompany '$(PSScript_SetupLVSDE.requestedForCompany)'
+          pwsh: true
+
+  
+     
+
+    #Install Terraform v14.8
+    - task: ms-devlabs.custom-terraform-tasks.custom-terraform-installer-task.TerraformInstaller@0
+      inputs:
+        terraformVersion: '0.14.8'
+      displayName: Install Terraform
+
+    #Run Terraform Init
+    - script: |
+        terraform -chdir=%TF_Path% init
+      displayName: Terraform Init
+      env:
+        TF_Path: $(TF_Directory)
+        ARM_TENANT_ID: $(ARM_TENANT_ID) #Secret values are not mapped automatically
+        ARM_CLIENT_ID: $(ARM_CLIENT_ID) #Secret values are not mapped automatically
+        ARM_CLIENT_SECRET: $(ARM_CLIENT_SECRET) #Secret values are not mapped automatically
+
+    #Run Terraform Plan
+    - script: |
+        terraform -chdir=%TF_Path% plan
+      displayName: Terraform Plan
+      env:
+        TF_Path: $(TF_Directory)
+        ARM_TENANT_ID: $(ARM_TENANT_ID) #Secret values are not mapped automatically
+        ARM_CLIENT_ID: $(ARM_CLIENT_ID) #Secret values are not mapped automatically
+        ARM_CLIENT_SECRET: $(ARM_CLIENT_SECRET) #Secret values are not mapped automatically
+
+    #Run Terraform Apply
+    - script: |
+        terraform -chdir=%TF_Path% apply -auto-approve
+      displayName: Terraform Apply
+      #condition: ${{ parameters.RunTerraformApply }}
+      condition: and(succeeded(), eq(variables.RunTerraformApply, true))
+      env:
+        TF_Path: $(TF_Directory)
+        ARM_TENANT_ID: $(ARM_TENANT_ID) #Secret values are not mapped automatically
+        ARM_CLIENT_ID: $(ARM_CLIENT_ID) #Secret values are not mapped automatically
+        ARM_CLIENT_SECRET: $(ARM_CLIENT_SECRET) #Secret values are not mapped automatically 
+
+    #Archive files so they can be uploaded to Storage Account.
+    - task: ArchiveFiles@2
+      displayName: 'Archive Terraform'
+      condition: always()
+      inputs:
+        rootFolderOrFile: $(TF_Directory)
+        includeRootFolder: false
+        archiveFile: '$(System.DefaultWorkingDirectory)/zip/VM.zip'
+
+    # Publish pipeline artifacts
+    # Publish (upload) a file or directory as a named artifact for the current run
+    - task: PublishPipelineArtifact@1
+      displayName: 'Publish Terraform Archive As Artifact'
+      condition: always()
+      inputs:
+        targetPath: $(System.DefaultWorkingDirectory)/zip/VM.zip
+        artifactName: $(ArtifactName)
+
+  - job : templateCompaniesJob
+    displayName: Long View
+    dependsOn : terraformProcessJob
+    condition: eq ( dependencies.terraformProcessJob.outputs['PSScript_CompanyName.templateExists'], ${{true}} ) 
+
+    pool:
+      vmImage: 'windows-2019'
+    variables:
+    - name: currentCompanyName
+      value: $[ dependencies.terraformProcessJob.outputs['PSScript_CompanyName.currentCompany'] ]
+    - name: pathTemplate
+      value: $[ dependencies.terraformProcessJob.outputs['PSScript_CompanyName.pathTemplate'] ]
+    - name: templateExists
+      value: $[ dependencies.terraformProcessJob.outputs['PSScript_CompanyName.templateExists'] ]
+    - name: nameTemplate
+      value: $[ dependencies.terraformProcessJob.outputs['PSScript_CompanyName.nameTemplate'] ]     
+    - name: parameteres
+      value: $[ dependencies.terraformProcessJob.outputs['PSScript_CompanyName.parameteres'] ]     
+    - name: TAPToken
+      value: $[ dependencies.terraformProcessJob.outputs['PSScript_SetupLVSDE.TAPToken'] ]     
+     
+    steps:
+        - bash: |              
+            echo "Name company : $(currentCompanyName)"
+
+
+        - task: PowerShell@2
+          displayName: Validate name company
+          name: PSScript_CompanyName
+          inputs:
+              targetType: 'inline'
+              script: |
+                    Write-Host "currentCompanyName $(currentCompanyName)"
+                    Write-Host "pathTemplate $(pathTemplate)"
+                    Write-Host "templateExists $(templateExists)"
+                    Write-Host "nameTemplate $(nameTemplate)"                     
+                    
+        - task: PowerShell@2
+          displayName: Calling Api Template
+          name: PSScript_TemplateAPI
+          inputs:
+              targetType: filePath
+              filePath: $(System.DefaultWorkingDirectory)/LVSDE/RunPipelineTemplate.ps1
+              arguments:  -Org lvs1code `
+                          -Project CloudManagementPlatform `
+                          -PipeLineId $(PipeLineAPI) `
+                          -PipeLineVersion 1 `
+                          -RefName '$(PipeLineRef)' `
+                          -CompanyName '$(currentCompanyName)' `
+                          -NameTemplate '$(nameTemplate)' `
+                          -Msg "Getting information from Job" `
+                          -PersonalToken $(TAPToken)
+              pwsh: true
+
+
+      
+
+
+      

@@ -1,0 +1,8 @@
+{
+    "templateParameters" : {
+        "EditionCode": "",
+        "SRSASToken":"",
+        "SRBlobName":"",
+        "SRBlobContainer": ""
+    }
+}

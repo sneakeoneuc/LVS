@@ -1,0 +1,351 @@
+{
+  "connectionInstanceId": "PROD",
+  "inputs": {
+    "PipelineParameters": {
+      "inputs": [
+        {
+          "value": "L@bR00t!L@bR00t",
+          "key": "admin_password"
+        },
+        {
+          "value": "cholmesdev",
+          "key": "admin_username"
+        },
+        {
+          "value": "OpenLogic:CentOS:7.5:latest",
+          "key": "image_URN"
+        },
+        {
+          "value": "RG-CMP-TEST-01",
+          "key": "resource_group_name"
+        },
+        {
+          "value": "/subscriptions/147712f0-f82c-45ad-9b76-48d6f9855059/resourceGroups/RG-DEMO-01/providers/Microsoft.Network/virtualNetworks/vnet-OnPrem-westus2-01/subnets/snet-apps-OnPrem-westus2-01",
+          "key": "subnet_id"
+        },
+        {
+          "value": "/subscriptions/147712f0-f82c-45ad-9b76-48d6f9855059",
+          "key": "subscription_id"
+        },
+        {
+          "value": "vm-0373",
+          "key": "vm_name"
+        },
+        {
+          "value": "Standard_D8s_v4",
+          "key": "vm_size"
+        },
+        {
+          "key": "availability_set_id"
+        },
+        {
+          "key": "datadisk_type_1",
+          "value": 10
+        },
+        {
+          "key": "datadisk_size_1",
+          "value": 100
+        },
+        {
+          "key": "datadisk_type_2",
+          "value": 10
+        },
+        {
+          "key": "datadisk_size_2",
+          "value": 100
+        },
+        {
+          "key": "datadisk_type_3",
+          "value": 20
+        },
+        {
+          "key": "datadisk_size_3",
+          "value": 100
+        },
+        {
+          "key": "datadisk_type_4"
+        },
+        {
+          "key": "datadisk_size_4",
+          "value": 100
+        }
+      ]
+    },
+    "ServiceContext": {
+      "quantity": 1,
+      "questionsAndAnswers": [
+        {
+          "label": "Requested For",
+          "key": "d41b9496-0bbe-3ae4-821a-ab37d07cf0e3",
+          "tags": [],
+          "assignedToProcessInput": false,
+          "value": "LVS Internal",
+          "displayValue": [
+            "LVS Internal"
+          ],
+          "valueType": "TEXT",
+          "confidential": false
+        },
+        {
+          "tags": [],
+          "assignedToProcessInput": true,
+          "value": "/subscriptions/147712f0-f82c-45ad-9b76-48d6f9855059",
+          "valueType": "LIST",
+          "key": "00eed627-a44e-bbcf-2f15-fe0656ed43f5",
+          "confidential": false,
+          "metaData": [
+            "System.Collections.Hashtable"
+          ],
+          "label": "Subscription to Use",
+          "displayValue": [
+            "SUB-LVS-MSA-MAR2020"
+          ]
+        },
+        {
+          "tags": [],
+          "assignedToProcessInput": true,
+          "value": "RG-CMP-TEST-01",
+          "valueType": "LIST",
+          "key": "4ba73297-bd86-6c77-9c56-00db4ee16cb4",
+          "confidential": false,
+          "metaData": [
+            "System.Collections.Hashtable"
+          ],
+          "label": "Resource Group",
+          "displayValue": [
+            "RG-CMP-TEST-01"
+          ]
+        },
+        {
+          "label": "EditionCode",
+          "key": "9b8de28d-986b-b70f-e870-9b548b6cef78",
+          "tags": [],
+          "assignedToProcessInput": true,
+          "value": "Az_LinuxVM_v3",
+          "displayValue": [
+            "Az_LinuxVM_v3"
+          ],
+          "valueType": "TEXT",
+          "confidential": false
+        },
+        {
+          "label": "Username",
+          "key": "6bcfe34c-150c-58b3-efc2-f9344b0a85fc",
+          "tags": [],
+          "assignedToProcessInput": true,
+          "value": "cholmesdev",
+          "displayValue": [
+            "cholmesdev"
+          ],
+          "valueType": "TEXT",
+          "confidential": false
+        },
+        {
+          "label": "Password",
+          "key": "0aa56503-88a6-557b-2bef-64e089777bee",
+          "tags": [],
+          "assignedToProcessInput": true,
+          "value": "L@bR00t!L@bR00t",
+          "displayValue": [
+            "L@bR00t!L@bR00t"
+          ],
+          "valueType": "TEXT",
+          "confidential": false
+        },
+        {
+          "label": "VIrtual Machine Name",
+          "key": "0aa1d3c4-c1bd-10a3-59d7-45ef42e26faf",
+          "tags": [],
+          "assignedToProcessInput": true,
+          "value": "vm-0373",
+          "displayValue": [
+            "vm-0373"
+          ],
+          "valueType": "TEXT",
+          "confidential": false
+        },
+        {
+          "tags": [],
+          "assignedToProcessInput": true,
+          "value": "OpenLogic:CentOS:7.5:latest",
+          "valueType": "LIST",
+          "key": "5debf6b1-9df2-538d-4b95-539d93387f09",
+          "confidential": false,
+          "metaData": [
+            "System.Collections.Hashtable"
+          ],
+          "label": "Virtual Machine Image",
+          "displayValue": [
+            "CentOS"
+          ]
+        },
+        {
+          "tags": [],
+          "assignedToProcessInput": true,
+          "value": "Standard_D8s_v4",
+          "valueType": "LIST",
+          "key": "439f1b47-2e07-98e4-ba6e-592cbe38e655",
+          "confidential": false,
+          "metaData": [
+            "System.Collections.Hashtable"
+          ],
+          "label": "Virtual Machine Size",
+          "displayValue": [
+            "Large"
+          ]
+        },
+        {
+          "tags": [],
+          "assignedToProcessInput": true,
+          "value": "/subscriptions/147712f0-f82c-45ad-9b76-48d6f9855059/resourceGroups/RG-DEMO-01/providers/Microsoft.Network/virtualNetworks/vnet-OnPrem-westus2-01/subnets/snet-apps-OnPrem-westus2-01",
+          "valueType": "LIST",
+          "key": "9d6cd0ff-11cc-e2a6-8a6e-f93da48e7bca",
+          "confidential": false,
+          "metaData": [
+            "System.Collections.Hashtable"
+          ],
+          "label": "SubnetID",
+          "displayValue": [
+            "vnet-OnPrem-westus2-01,snet-apps-OnPrem-westus2-01,westus2"
+          ]
+        },
+        {
+          "tags": [],
+          "assignedToProcessInput": true,
+          "value": "true",
+          "valueType": "BOOLEAN",
+          "key": "05db7354-ecae-3dba-9fb5-6e8267656840",
+          "confidential": false,
+          "metaData": [
+            "System.Collections.Hashtable"
+          ],
+          "label": "Should Long View Systems provide support for this virtual machine?",
+          "displayValue": [
+            "YES"
+          ]
+        },
+        {
+          "label": "Additonal Comments",
+          "key": "4be97eee-2626-3721-e07f-e082276ae04f",
+          "tags": [],
+          "assignedToProcessInput": false,
+          "value": "PLease review....",
+          "displayValue": [
+            "PLease review...."
+          ],
+          "valueType": "TEXT",
+          "confidential": false
+        }
+      ],
+      "orderYearlyCostAmount": 0.0,
+      "serviceRequest": {
+        "guid": "AGGIIF2MHQ12SAQT3BPMQS41VDNONJ",
+        "displayId": "11551",
+        "srmRequestDateTimeFormat": null,
+        "externalId": null,
+        "reopenReason": null,
+        "srmRequestDateFormat": null,
+        "requesterLocale": null,
+        "turnaroundDate": null,
+        "srmRequestTimeFormat": null,
+        "submittedDate": "2021-05-19T15:29:46Z",
+        "id": "11551",
+        "quantity": 1,
+        "orderDisplayId": null
+      },
+      "orderMonthlyCost": "0.00 USD",
+      "myStuffItem": null,
+      "orderDescription": null,
+      "externalOrderId": null,
+      "orderId": "10920",
+      "service": {
+        "localizedName": "Linux Virtual Machine",
+        "monthlyCostAmount": 0.0,
+        "oneTimeCost": "0 USD",
+        "oneTimeCostAmount": 0.0,
+        "yearlyCostAmount": 0.0,
+        "id": "10701",
+        "serviceProvisioningTimeUnit": null,
+        "connectionId": null,
+        "entitledToRequestedFor": true,
+        "monthlyCost": "0 USD",
+        "bundle": false,
+        "localizedVersion": "1.1",
+        "externalId": null,
+        "bundleItems": [],
+        "serviceProvisioningTime": null,
+        "subCatalogId": null,
+        "name": "Linux Virtual Machine",
+        "yearlyCost": "0 USD",
+        "entitledToRequestedBy": true,
+        "version": "1.1"
+      },
+      "orderOneTimeCostAmount": 0.0,
+      "orderYearlyCost": "0.00 USD",
+      "orderMonthlyCostAmount": 0.0,
+      "requestedBy": {
+        "emailAddress": "craig.holmes@lvs1.com",
+        "fullName": "Craig Holmes",
+        "ntDomain": null,
+        "siteGroup": null,
+        "organization": "Client Services",
+        "department": "Client Services",
+        "jobTitle": "Technical Architect",
+        "region": null,
+        "site": {
+          "street": "Suite 1901, 10088 102 Avenue N.W.",
+          "stateProvince": "Alberta",
+          "country": "Canada",
+          "city": "Edmonton",
+          "zipPostalCode": "T5J 2Z1",
+          "name": "LVS-Edmonton"
+        },
+        "company": "LVS Internal",
+        "loginName": "craig.holmes@lvs1.com"
+      },
+      "orderOneTimeCost": "0.00 USD",
+      "submitter": {
+        "emailAddress": "craig.holmes@lvs1.com",
+        "fullName": "Craig Holmes",
+        "ntDomain": null,
+        "siteGroup": null,
+        "organization": "Client Services",
+        "department": "Client Services",
+        "jobTitle": "Technical Architect",
+        "region": null,
+        "site": {
+          "street": "Suite 1901, 10088 102 Avenue N.W.",
+          "stateProvince": "Alberta",
+          "country": "Canada",
+          "city": "Edmonton",
+          "zipPostalCode": "T5J 2Z1",
+          "name": "LVS-Edmonton"
+        },
+        "company": "LVS Internal",
+        "loginName": "craig.holmes@lvs1.com"
+      },
+      "requestedFor": {
+        "emailAddress": "craig.holmes@lvs1.com",
+        "fullName": "Craig Holmes",
+        "ntDomain": null,
+        "siteGroup": null,
+        "organization": "Client Services",
+        "department": "Client Services",
+        "jobTitle": "Technical Architect",
+        "region": null,
+        "site": {
+          "street": "Suite 1901, 10088 102 Avenue N.W.",
+          "stateProvince": "Alberta",
+          "country": "Canada",
+          "city": "Edmonton",
+          "zipPostalCode": "T5J 2Z1",
+          "name": "LVS-Edmonton"
+        },
+        "company": "LVS Internal",
+        "loginName": "craig.holmes@lvs1.com"
+      },
+      "orderGuid": "AGGIIF2MHQ12SAQT3CAFQS42FNNPXJ"
+    },
+    "EditionCode": "Az_LinuxVM_v3"
+  }
+}

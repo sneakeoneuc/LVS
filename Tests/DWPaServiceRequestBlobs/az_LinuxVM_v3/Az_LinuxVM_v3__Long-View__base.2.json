@@ -1,0 +1,351 @@
+{
+  "inputs": {
+    "ServiceContext": {
+      "orderYearlyCost": "0.00 USD",
+      "orderYearlyCostAmount": 0.0,
+      "orderGuid": "AGGIIF2MHQ12SAQT3CRYQS42X5NTVS",
+      "myStuffItem": null,
+      "externalOrderId": null,
+      "orderId": "10921",
+      "orderMonthlyCost": "0.00 USD",
+      "orderOneTimeCost": "0.00 USD",
+      "orderDescription": null,
+      "orderMonthlyCostAmount": 0.0,
+      "requestedFor": {
+        "siteGroup": null,
+        "loginName": "noah.boddy@lvs1.com",
+        "jobTitle": null,
+        "site": {
+          "street": "250 - 2 Street SW",
+          "zipPostalCode": "T2P 0C1",
+          "city": "Calgary",
+          "country": "Canada",
+          "name": "LVS-Calgary",
+          "stateProvince": "Alberta"
+        },
+        "department": "ISD",
+        "organization": "Client Services",
+        "ntDomain": null,
+        "emailAddress": "noah.boddy@lvs1.com",
+        "fullName": "Noah Boddy",
+        "region": null,
+        "company": "Long View"
+      },
+      "serviceRequest": {
+        "submittedDate": "2021-05-19T15:50:55Z",
+        "srmRequestDateFormat": null,
+        "id": "11552",
+        "displayId": "11552",
+        "orderDisplayId": null,
+        "turnaroundDate": null,
+        "requesterLocale": null,
+        "srmRequestDateTimeFormat": null,
+        "reopenReason": null,
+        "srmRequestTimeFormat": null,
+        "guid": "AGGIIF2MHQ12SAQT3COVQS42U2NT20",
+        "externalId": null,
+        "quantity": 1
+      },
+      "questionsAndAnswers": [
+        {
+          "value": "Long View",
+          "confidential": false,
+          "assignedToProcessInput": false,
+          "displayValue": [
+            "Long View"
+          ],
+          "key": "d41b9496-0bbe-3ae4-821a-ab37d07cf0e3",
+          "label": "Requested For",
+          "valueType": "TEXT",
+          "tags": []
+        },
+        {
+          "value": "/subscriptions/57215661-2f9e-482f-9334-c092e02651ec",
+          "metaData": [
+            "System.Collections.Hashtable"
+          ],
+          "label": "Subscription to Use",
+          "valueType": "LIST",
+          "tags": [],
+          "displayValue": [
+            "CH - MSDN Subscription"
+          ],
+          "confidential": false,
+          "assignedToProcessInput": true,
+          "key": "00eed627-a44e-bbcf-2f15-fe0656ed43f5"
+        },
+        {
+          "value": "RG-CORECOMPUTE-PROD-01",
+          "metaData": [
+            "System.Collections.Hashtable"
+          ],
+          "label": "Resource Group",
+          "valueType": "LIST",
+          "tags": [],
+          "displayValue": [
+            "RG-CORECOMPUTE-PROD-01"
+          ],
+          "confidential": false,
+          "assignedToProcessInput": true,
+          "key": "4ba73297-bd86-6c77-9c56-00db4ee16cb4"
+        },
+        {
+          "value": "Az_LinuxVM_v3",
+          "confidential": false,
+          "assignedToProcessInput": true,
+          "displayValue": [
+            "Az_LinuxVM_v3"
+          ],
+          "key": "9b8de28d-986b-b70f-e870-9b548b6cef78",
+          "label": "EditionCode",
+          "valueType": "TEXT",
+          "tags": []
+        },
+        {
+          "value": "craigholmes",
+          "confidential": false,
+          "assignedToProcessInput": true,
+          "displayValue": [
+            "craigholmes"
+          ],
+          "key": "6bcfe34c-150c-58b3-efc2-f9344b0a85fc",
+          "label": "Username",
+          "valueType": "TEXT",
+          "tags": []
+        },
+        {
+          "value": "L@b00t!L@b",
+          "confidential": false,
+          "assignedToProcessInput": true,
+          "displayValue": [
+            "L@b00t!L@b"
+          ],
+          "key": "0aa56503-88a6-557b-2bef-64e089777bee",
+          "label": "Password",
+          "valueType": "TEXT",
+          "tags": []
+        },
+        {
+          "value": "vm-048",
+          "confidential": false,
+          "assignedToProcessInput": true,
+          "displayValue": [
+            "vm-048"
+          ],
+          "key": "0aa1d3c4-c1bd-10a3-59d7-45ef42e26faf",
+          "label": "VIrtual Machine Name",
+          "valueType": "TEXT",
+          "tags": []
+        },
+        {
+          "value": "OpenLogic:CentOS:7.5:latest",
+          "metaData": [
+            "System.Collections.Hashtable"
+          ],
+          "label": "Virtual Machine Image",
+          "valueType": "LIST",
+          "tags": [],
+          "displayValue": [
+            "CentOS"
+          ],
+          "confidential": false,
+          "assignedToProcessInput": true,
+          "key": "5debf6b1-9df2-538d-4b95-539d93387f09"
+        },
+        {
+          "value": "Standard_D4s_v4",
+          "metaData": [
+            "System.Collections.Hashtable"
+          ],
+          "label": "Virtual Machine Size",
+          "valueType": "LIST",
+          "tags": [],
+          "displayValue": [
+            "Medium"
+          ],
+          "confidential": false,
+          "assignedToProcessInput": true,
+          "key": "439f1b47-2e07-98e4-ba6e-592cbe38e655"
+        },
+        {
+          "value": "/subscriptions/57215661-2f9e-482f-9334-c092e02651ec/resourceGroups/RG-CORENETWORK-PROD-01/providers/Microsoft.Network/virtualNetworks/vnet-cor1-westus2-01/subnets/snet-Services-cor1-westus2-01",
+          "metaData": [
+            "System.Collections.Hashtable"
+          ],
+          "label": "SubnetID",
+          "valueType": "LIST",
+          "tags": [],
+          "displayValue": [
+            "vnet-cor1-westus2-01,snet-Services-cor1-westus2-01,westus2"
+          ],
+          "confidential": false,
+          "assignedToProcessInput": true,
+          "key": "9d6cd0ff-11cc-e2a6-8a6e-f93da48e7bca"
+        },
+        {
+          "value": "true",
+          "metaData": [
+            "System.Collections.Hashtable"
+          ],
+          "label": "Should Long View Systems provide support for this virtual machine?",
+          "valueType": "BOOLEAN",
+          "tags": [],
+          "displayValue": [
+            "YES"
+          ],
+          "confidential": false,
+          "assignedToProcessInput": true,
+          "key": "05db7354-ecae-3dba-9fb5-6e8267656840"
+        },
+        {
+          "value": "Working",
+          "confidential": false,
+          "assignedToProcessInput": false,
+          "displayValue": [
+            "Working"
+          ],
+          "key": "4be97eee-2626-3721-e07f-e082276ae04f",
+          "label": "Additonal Comments",
+          "valueType": "TEXT",
+          "tags": []
+        }
+      ],
+      "orderOneTimeCostAmount": 0.0,
+      "requestedBy": {
+        "siteGroup": null,
+        "loginName": "noah.boddy@lvs1.com",
+        "jobTitle": null,
+        "site": {
+          "street": "250 - 2 Street SW",
+          "zipPostalCode": "T2P 0C1",
+          "city": "Calgary",
+          "country": "Canada",
+          "name": "LVS-Calgary",
+          "stateProvince": "Alberta"
+        },
+        "department": "ISD",
+        "organization": "Client Services",
+        "ntDomain": null,
+        "emailAddress": "noah.boddy@lvs1.com",
+        "fullName": "Noah Boddy",
+        "region": null,
+        "company": "Long View"
+      },
+      "service": {
+        "version": "1.1",
+        "name": "Linux Virtual Machine",
+        "entitledToRequestedFor": true,
+        "monthlyCost": "0 USD",
+        "serviceProvisioningTimeUnit": null,
+        "localizedName": "Linux Virtual Machine",
+        "yearlyCostAmount": 0.0,
+        "bundleItems": [],
+        "yearlyCost": "0 USD",
+        "bundle": false,
+        "monthlyCostAmount": 0.0,
+        "connectionId": null,
+        "localizedVersion": "1.1",
+        "externalId": null,
+        "subCatalogId": null,
+        "oneTimeCostAmount": 0.0,
+        "serviceProvisioningTime": null,
+        "id": "10701",
+        "oneTimeCost": "0 USD",
+        "entitledToRequestedBy": true
+      },
+      "submitter": {
+        "siteGroup": null,
+        "loginName": "noah.boddy@lvs1.com",
+        "jobTitle": null,
+        "site": {
+          "street": "250 - 2 Street SW",
+          "zipPostalCode": "T2P 0C1",
+          "city": "Calgary",
+          "country": "Canada",
+          "name": "LVS-Calgary",
+          "stateProvince": "Alberta"
+        },
+        "department": "ISD",
+        "organization": "Client Services",
+        "ntDomain": null,
+        "emailAddress": "noah.boddy@lvs1.com",
+        "fullName": "Noah Boddy",
+        "region": null,
+        "company": "Long View"
+      },
+      "quantity": 1
+    },
+    "PipelineParameters": {
+      "inputs": [
+        {
+          "key": "admin_password",
+          "value": "L@b00t!L@b"
+        },
+        {
+          "key": "admin_username",
+          "value": "craigholmes"
+        },
+        {
+          "key": "image_URN",
+          "value": "OpenLogic:CentOS:7.5:latest"
+        },
+        {
+          "key": "resource_group_name",
+          "value": "RG-CORECOMPUTE-PROD-01"
+        },
+        {
+          "key": "subnet_id",
+          "value": "/subscriptions/57215661-2f9e-482f-9334-c092e02651ec/resourceGroups/RG-CORENETWORK-PROD-01/providers/Microsoft.Network/virtualNetworks/vnet-cor1-westus2-01/subnets/snet-Services-cor1-westus2-01"
+        },
+        {
+          "key": "subscription_id",
+          "value": "/subscriptions/57215661-2f9e-482f-9334-c092e02651ec"
+        },
+        {
+          "key": "vm_name",
+          "value": "vm-048"
+        },
+        {
+          "key": "vm_size",
+          "value": "Standard_D4s_v4"
+        },
+        {
+          "key": "availability_set_id"
+        },
+        {
+          "key": "datadisk_type_1",
+          "value": 0
+        },
+        {
+          "key": "datadisk_size_1",
+          "value": 100
+        },
+        {
+          "key": "datadisk_type_2",
+          "value": 10
+        },
+        {
+          "key": "datadisk_size_2",
+          "value": 100
+        },
+        {
+          "key": "datadisk_type_3",
+          "value": 20
+        },
+        {
+          "key": "datadisk_size_3",
+          "value": 100
+        },
+        {
+          "key": "datadisk_type_4"
+        },
+        {
+          "key": "datadisk_size_4",
+          "value": 100
+        }
+      ]
+    },
+    "EditionCode": "Az_LinuxVM_v3"
+  },
+  "connectionInstanceId": "PROD"
+}

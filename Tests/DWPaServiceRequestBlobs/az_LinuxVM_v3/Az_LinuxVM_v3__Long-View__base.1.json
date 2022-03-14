@@ -1,0 +1,184 @@
+{
+  "inputs": {
+    "EditionCode": "Az_LinuxVM_v3",
+    "ServiceContext": {
+      "service": {
+        "bundleItems": [],
+        "version": "2.0",
+        "serviceProvisioningTimeUnit": null,
+        "externalId": null,
+        "yearlyCostAmount": 180.0,
+        "monthlyCostAmount": 15.0,
+        "bundle": false,
+        "localizedName": "Deploy Azure VM",
+        "subCatalogId": null,
+        "monthlyCost": "15.00 USD",
+        "connectionId": null,
+        "entitledToRequestedFor": true,
+        "yearlyCost": "180.00 USD",
+        "oneTimeCost": "50.00 USD",
+        "oneTimeCostAmount": 50.0,
+        "serviceProvisioningTime": null,
+        "id": "10403",
+        "localizedVersion": "2.0",
+        "entitledToRequestedBy": true,
+        "name": "Deploy Azure VM"
+      },
+      "orderId": "1",
+      "orderGuid": "AGGDC7HUG6JMUAQP152NQO2UJN02QJ",
+      "quantity": 1,
+      "myStuffItem": null,
+      "requestedFor": {
+        "loginName": "noah.boddy@lvs1.com",
+        "organization": "Client Services",
+        "company": "Long View",
+        "fullName": "Noah Boddy",
+        "emailAddress": "noah.boddy@lvs1.com",
+        "jobTitle": "Technical Architect",
+        "ntDomain": null,
+        "siteGroup": null,
+        "region": null,
+        "site": {
+          "zipPostalCode": "T5J 2Z1",
+          "country": "Canada",
+          "name": "LVS-Edmonton",
+          "street": "Suite 1901, 10088 102 Avenue N.W.",
+          "city": "Edmonton",
+          "stateProvince": "Alberta"
+        },
+        "department": "Client Services"
+      },
+      "serviceRequest": {
+        "id": "10935",
+        "reopenReason": null,
+        "srmRequestTimeFormat": null,
+        "orderDisplayId": null,
+        "requesterLocale": null,
+        "guid": "AGGDC7HUG6JMUAQP15JFQO2UGG028C",
+        "srmRequestDateFormat": null,
+        "displayId": "10935",
+        "submittedDate": "2021-03-02T00:12:41Z",
+        "externalId": null,
+        "srmRequestDateTimeFormat": null,
+        "turnaroundDate": null,
+        "quantity": 1
+      },
+      "orderMonthlyCostAmount": 15.0,
+      "externalOrderId": null,
+      "requestedBy": {
+        "loginName": "noah.boddy@lvs1.com",
+        "organization": "Client Services",
+        "company": "LVS Internal",
+        "fullName": "Noah Boddy",
+        "emailAddress": "noah.boddy@lvs1.com",
+        "jobTitle": "Technical Architect",
+        "ntDomain": null,
+        "siteGroup": null,
+        "region": null,
+        "site": {
+          "zipPostalCode": "T5J 2Z1",
+          "country": "Canada",
+          "name": "LVS-Edmonton",
+          "street": "Suite 1901, 10088 102 Avenue N.W.",
+          "city": "Edmonton",
+          "stateProvince": "Alberta"
+        },
+        "department": "Client Services"
+      },
+      "submitter": {
+        "loginName": "noah.boddy@lvs1.com",
+        "organization": "Client Services",
+        "company": "Long View",
+        "fullName": "Noah Boddy",
+        "emailAddress": "noah.boddy@lvs1.com",
+        "jobTitle": "Technical Architect",
+        "ntDomain": null,
+        "siteGroup": null,
+        "region": null,
+        "site": {
+          "zipPostalCode": "T5J 2Z1",
+          "country": "Canada",
+          "name": "LVS-Edmonton",
+          "street": "Suite 1901, 10088 102 Avenue N.W.",
+          "city": "Edmonton",
+          "stateProvince": "Alberta"
+        },
+        "department": "Client Services"
+      },
+      "orderOneTimeCost": "50.00 USD",
+      "orderYearlyCostAmount": 180.0,
+      "orderYearlyCost": "180.00 USD",
+      "orderDescription": null,
+      "orderMonthlyCost": "15.00 USD",
+      "orderOneTimeCostAmount": 50.0
+    },
+    "PipelineParameters": {
+      "inputs": [
+        {
+          "key": "admin_password",
+          "value": "T^Y&U*I(KHHG$%d"
+        },
+        {
+          "key": "admin_username",
+          "value": "adminuserlocal"
+        },
+        {
+          "key": "image_URN",
+          "value": "OpenLogic:CentOS:7.5:latest"
+        },
+        {
+          "key": "resource_group_name",
+          "value": "RG-CORECOMPUTE-PROD-01"
+        },
+        {
+          "key": "subnet_id",
+          "value": "/subscriptions/57215661-2f9e-482f-9334-c092e02651ec/resourceGroups/RG-CORENETWORK-PROD-01/providers/Microsoft.Network/virtualNetworks/vnet-cor1-westus2-01/subnets/snet-Apps-cor1-westus2-01"
+        },
+        {
+          "key": "subscription_id",
+          "value": "/subscriptions/57215661-2f9e-482f-9334-c092e02651ec"
+        },
+        {
+          "key": "vm_name",
+          "value": "vm093"
+        },
+        {
+          "key": "vm_size",
+          "value": "Standard_D4s_v4"
+        },
+        {
+          "key": "datadisk_type_1",
+          "value": 0
+        },
+        {
+          "key": "datadisk_size_1",
+          "value": 100
+        },
+        {
+          "key": "datadisk_type_2",
+          "value": 10
+        },
+        {
+          "key": "datadisk_size_2",
+          "value": 100
+        },
+        {
+          "key": "datadisk_type_3",
+          "value": 20
+        },
+        {
+          "key": "datadisk_size_3",
+          "value": 100
+        },
+        {
+          "key": "datadisk_type_4"
+        },
+        {
+          "key": "datadisk_size_4",
+          "value": 100
+        }
+      ]
+    }
+  },
+  "connectionInstanceId": "PROD"
+}

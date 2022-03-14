@@ -1,0 +1,20 @@
+{
+    "Params_Test_v3":{
+        "Organization": "lvs1code",
+        "Project": "CloudManagementPlatform",
+        "BuildDefinitionID": "67",
+        "BuildDefName": "DWPa_Params_Test_v3"
+    },
+    "Az_LinuxVM_v3":{
+        "Organization": "lvs1code",
+        "Project": "CloudManagementPlatform",
+        "BuildDefinitionID": "66",
+        "BuildDefName": "CMP-LVSDE-TF-VM"
+    },
+    "Az_WindowsVM_v3":{
+        "Organization": "lvs1code",
+        "Project": "CloudManagementPlatform",
+        "BuildDefinitionID": "66",
+        "BuildDefName": "CMP-LVSDE-TF-VM"
+    }        
+}

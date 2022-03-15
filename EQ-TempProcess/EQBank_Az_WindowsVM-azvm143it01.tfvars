@@ -5,15 +5,13 @@
 
 
 
-
-
 # Configure the Microsoft Azure Backend
 # Get-AzSubscription
 tenant_id = "8ce6cd64-f1d8-43f8-a8be-9de82f375ee9"
 subscription_id = "c82c18dc-6080-4480-992b-f6544b5789af"
 
 #SET THESE
-admin_username = "adminuseraccount"
+admin_username = "adminuser"
 admin_password = ""  
 
 #Run in Cloud Shell to get subnet ID - https://portal.azure.com/#cloudshell/ 
@@ -22,8 +20,8 @@ subnet_id = "/subscriptions/c82c18dc-6080-4480-992b-f6544b5789af/resourceGroups/
 
 vm_name = "azvm143it01"  #set VM name
 resource_group_name = "az-azsmoke-rg-prod"
-location = "canadacentral"
-vm_size = "Standard_D2s_v3"
+location = "EastUS"
+vm_size = "Standard_B1ms"
 availability_set_id = "" #Will Require availability id string
 
 #Admin settings
@@ -38,8 +36,8 @@ Disk_Encryt_key_vault_resource_group = "MyKeyVaultRG"
 
 #Backup
 backup_vault_enabled = true
-backup_vault_name = "RS-BACKUP-EAST-NONPROD"
-backup_vault_resource_group = "RG-BACKUP-NONPROD"
+backup_vault_name = "RS-BACKUP-EAST-PROD"
+backup_vault_resource_group = "RG-BACKUP-PROD"
 backup_vault_policy_name = "DefaultPolicy"
 #wad_version = 
 
@@ -56,10 +54,10 @@ os_disk_managed_disk_type = "Standard_LRS"
 #      lunID             = 1
 #    }
     #,      #uncomment section if additional data disks required. Increase LUNID +1
-     # disk2 = {
-     # disk_size_gb      = 250,
-     # managed_disk_type = "Premium_LRS"
-     # lunID             = 2
+# disk2 = {
+# disk_size_gb      = 250,
+# managed_disk_type = "Premium_LRS"
+# lunID             = 2
     #}
 #}
 
@@ -88,4 +86,4 @@ tags_customer_sub= {
     "Information Type"      = "Internal"
     "Information Operation" = "Pass Through"
     env                     = "non-pcf"
-  } 
+} 

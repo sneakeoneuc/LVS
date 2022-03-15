@@ -51,16 +51,16 @@ os_disk_managed_disk_type = "Premium_LRS"
 #os_disk_disk_size_gb= 127  #change size -  default is 127GB - remove first comment
 
 data_disk_details = {
-   disk1 = {
-     disk_size_gb      = 10,
+  disk1 = {
+    disk_size_gb      = 10,
       managed_disk_type = "Premium_LRS"
       lunID             = 1
     }
     #,      #uncomment section if additional data disks required. Increase LUNID +1
-     # disk2 = {
-     # disk_size_gb      = 250,
-     # managed_disk_type = "Premium_LRS"
-     # lunID             = 2
+# disk2 = {
+# disk_size_gb      = 250,
+# managed_disk_type = "Premium_LRS"
+# lunID             = 2
     #}
 }
 
